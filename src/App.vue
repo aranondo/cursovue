@@ -1,12 +1,20 @@
 <template>
   <div id="app">
+    <mensajes />
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/noticias">Noticias</router-link> |
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import Mensajes from "./components/Mensajes"
+export default {
+  components: {Mensajes}
+}
+</script>
 
 <style>
 #app {
